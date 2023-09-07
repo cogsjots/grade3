@@ -540,7 +540,7 @@
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"transition":"slide","help":true,"showSlideNumber":"speaker","showNotes":true,"controls":true,"customcontrols":{"controls":[{"icon":"<i class=\"fa fa-pen-square\"></i>","title":"Toggle chalkboard (B)","action":"RevealChalkboard.toggleChalkboard();"},{"icon":"<i class=\"fa fa-pen\"></i>","title":"Toggle notes canvas (C)","action":"RevealChalkboard.toggleNotesCanvas();"}]}}, queryOptions);
+      var options = extend(defaultOptions, {"transition":"slide","help":true,"showSlideNumber":"speaker","showNotes":true,"controls":true,"customcontrols":{"controls":[{"id":"toggle-overview","title":"Toggle overview (O)","icon":"<i class=\"fa fa-th\"></i>","action":"Reveal.toggleOverview();"},{"icon":"<i class=\"fa fa-pen-square\"></i>","title":"Toggle chalkboard (B)","action":"RevealChalkboard.toggleChalkboard();"},{"icon":"<i class=\"fa fa-pen\"></i>","title":"Toggle notes canvas (C)","action":"RevealChalkboard.toggleNotesCanvas();"}]}}, queryOptions);
     </script>
 
     <script src="./_assets/plugin/fontawesome_all.min.js"></script>
